@@ -177,6 +177,15 @@
       text-decoration: none;
     }
 
+    .credit {
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px dashed #30363d;
+      font-size: 12px;
+      color: #747d85;
+      letter-spacing: 0.6px;
+    }
+
     .hidden {
       display: none;
     }
@@ -212,9 +221,11 @@
 </head>
 
 <body>
+
   <div class="wrapper">
 
     <section class="hero">
+
       <div class="logo-circle">
         <div>
           <div class="logo-main">Mavi</div>
@@ -223,16 +234,36 @@
       </div>
 
       <h1>Mavi Döner & Burger</h1>
-      <div class="subtitle">Fast Food • Food Truck</div>
+
+      <div class="subtitle">
+        Fast Food • Food Truck
+      </div>
 
       <div class="language-switch">
-        <button class="lang-btn active" onclick="showLanguage('bg', this)">BG</button>
-        <button class="lang-btn" onclick="showLanguage('en', this)">EN</button>
+        <button
+          class="lang-btn active"
+          onclick="showLanguage('bg', this)"
+        >
+          BG
+        </button>
+
+        <button
+          class="lang-btn"
+          onclick="showLanguage('en', this)"
+        >
+          EN
+        </button>
       </div>
+
     </section>
 
+
     <div class="quick-actions">
-      <a class="action-btn" href="tel:+359894975048">
+
+      <a
+        class="action-btn"
+        href="tel:+359894975048"
+      >
         📞 Call / Обади се
       </a>
 
@@ -243,13 +274,20 @@
       >
         📸 Instagram
       </a>
+
     </div>
 
+
     <!-- BULGARIAN MENU -->
+
     <div id="bg-menu">
 
+
       <section class="menu-section">
-        <h2 class="section-title">Дюнер</h2>
+
+        <h2 class="section-title">
+          Дюнер
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">Голям</div>
@@ -275,10 +313,15 @@
           <div class="item-name">Бокс дюнер</div>
           <div class="price">4,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Бургери</h2>
+
+        <h2 class="section-title">
+          Бургери
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">Телешки бургер</div>
@@ -299,10 +342,15 @@
           <div class="item-name">Пилешки бургер</div>
           <div class="price">3,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Тостове</h2>
+
+        <h2 class="section-title">
+          Тостове
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">С турски суджук</div>
@@ -323,10 +371,15 @@
           <div class="item-name">С пилешка шунка и картофи</div>
           <div class="price">3,50 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Хот дог</h2>
+
+        <h2 class="section-title">
+          Хот дог
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">С пилешки кренвирш</div>
@@ -337,10 +390,15 @@
           <div class="item-name">С кебапче</div>
           <div class="price">2,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Скара и др.</h2>
+
+        <h2 class="section-title">
+          Скара и др.
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">Кюфте / Кебапче</div>
@@ -361,15 +419,22 @@
           <div class="item-name">Пилешки хапки - 8 бр. с картофи</div>
           <div class="price">4,50 €</div>
         </div>
+
       </section>
 
     </div>
 
+
     <!-- ENGLISH MENU -->
+
     <div id="en-menu" class="hidden">
 
+
       <section class="menu-section">
-        <h2 class="section-title">Döner</h2>
+
+        <h2 class="section-title">
+          Döner
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">Large Döner</div>
@@ -395,10 +460,15 @@
           <div class="item-name">Döner Box</div>
           <div class="price">4,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Burgers</h2>
+
+        <h2 class="section-title">
+          Burgers
+        </h2>
 
         <div class="menu-item">
           <div class="item-name">Beef Burger</div>
@@ -419,75 +489,116 @@
           <div class="item-name">Chicken Burger</div>
           <div class="price">3,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Toasts</h2>
+
+        <h2 class="section-title">
+          Toasts
+        </h2>
 
         <div class="menu-item">
-          <div class="item-name">Toast with Turkish Sucuk</div>
+          <div class="item-name">
+            Toast with Turkish Sucuk
+          </div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Toast with Turkish Sucuk and Fries</div>
+          <div class="item-name">
+            Toast with Turkish Sucuk and Fries
+          </div>
           <div class="price">3,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Toast with Chicken Ham</div>
+          <div class="item-name">
+            Toast with Chicken Ham
+          </div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Toast with Chicken Ham and Fries</div>
+          <div class="item-name">
+            Toast with Chicken Ham and Fries
+          </div>
           <div class="price">3,50 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Hot Dogs</h2>
+
+        <h2 class="section-title">
+          Hot Dogs
+        </h2>
 
         <div class="menu-item">
-          <div class="item-name">Chicken Sausage Hot Dog</div>
+          <div class="item-name">
+            Chicken Sausage Hot Dog
+          </div>
           <div class="price">2,00 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Kebapche Hot Dog</div>
+          <div class="item-name">
+            Kebapche Hot Dog
+          </div>
           <div class="price">2,00 €</div>
         </div>
+
       </section>
 
+
       <section class="menu-section">
-        <h2 class="section-title">Grill & Sides</h2>
+
+        <h2 class="section-title">
+          Grill & Sides
+        </h2>
 
         <div class="menu-item">
-          <div class="item-name">Kyufte / Kebapche</div>
+          <div class="item-name">
+            Kyufte / Kebapche
+          </div>
           <div class="price">1,00 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">French Fries</div>
+          <div class="item-name">
+            French Fries
+          </div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Chicken Bites - 8 pcs</div>
+          <div class="item-name">
+            Chicken Bites - 8 pcs
+          </div>
           <div class="price">3,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">Chicken Bites - 8 pcs with Fries</div>
+          <div class="item-name">
+            Chicken Bites - 8 pcs with Fries
+          </div>
           <div class="price">4,50 €</div>
         </div>
+
       </section>
 
     </div>
 
+
     <footer class="footer">
-      <strong>Mavi Foods Truck</strong><br />
-      📞 0894 975 048<br />
+
+      <strong>Mavi Foods Truck</strong>
+      <br />
+
+      📞 0894 975 048
+      <br /><br />
 
       Instagram:
       <a
@@ -505,28 +616,48 @@
       >
         Facebook: Mavi Foods Truck
       </a>
+
+      <div class="credit">
+        // Created by Mine
+      </div>
+
     </footer>
 
   </div>
 
-  <script>
-    function showLanguage(language, button) {
-      const bgMenu = document.getElementById("bg-menu");
-      const enMenu = document.getElementById("en-menu");
-      const buttons = document.querySelectorAll(".lang-btn");
 
-      buttons.forEach((btn) => btn.classList.remove("active"));
+  <script>
+
+    function showLanguage(language, button) {
+
+      const bgMenu =
+        document.getElementById("bg-menu");
+
+      const enMenu =
+        document.getElementById("en-menu");
+
+      const buttons =
+        document.querySelectorAll(".lang-btn");
+
+      buttons.forEach((btn) =>
+        btn.classList.remove("active")
+      );
 
       if (language === "bg") {
+
         bgMenu.classList.remove("hidden");
         enMenu.classList.add("hidden");
+
       } else {
+
         enMenu.classList.remove("hidden");
         bgMenu.classList.add("hidden");
+
       }
 
       button.classList.add("active");
     }
+
   </script>
 
 </body>
