@@ -80,6 +80,7 @@
       justify-content: center;
       gap: 10px;
       margin: 20px 0 6px;
+      flex-wrap: wrap;
     }
 
     .lang-btn {
@@ -240,6 +241,7 @@
       </div>
 
       <div class="language-switch">
+
         <button
           class="lang-btn active"
           onclick="showLanguage('bg', this)"
@@ -249,10 +251,18 @@
 
         <button
           class="lang-btn"
+          onclick="showLanguage('tr', this)"
+        >
+          TR
+        </button>
+
+        <button
+          class="lang-btn"
           onclick="showLanguage('en', this)"
         >
           EN
         </button>
+
       </div>
 
     </section>
@@ -262,17 +272,18 @@
 
       <a
         class="action-btn"
-        href="tel:+359894975048"
-      >
-        📞 Call / Обади се
-      </a>
-
-      <a
-        class="action-btn"
         href="https://www.instagram.com/truckmavifood?igsh=MTVzZzVwOWl2NnBudA=="
         target="_blank"
       >
         📸 Instagram
+      </a>
+
+      <a
+        class="action-btn"
+        href="https://www.facebook.com/search/top?q=Mavi%20Foods%20Truck"
+        target="_blank"
+      >
+        Facebook
       </a>
 
     </div>
@@ -281,7 +292,6 @@
     <!-- BULGARIAN MENU -->
 
     <div id="bg-menu">
-
 
       <section class="menu-section">
 
@@ -425,10 +435,155 @@
     </div>
 
 
+    <!-- TURKISH MENU -->
+
+    <div id="tr-menu" class="hidden">
+
+      <section class="menu-section">
+
+        <h2 class="section-title">
+          Döner
+        </h2>
+
+        <div class="menu-item">
+          <div class="item-name">Büyük Döner</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Orta Döner</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Küçük Döner</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Ekmek Arası Döner</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Box Döner</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+      </section>
+
+
+      <section class="menu-section">
+
+        <h2 class="section-title">
+          Burgerler
+        </h2>
+
+        <div class="menu-item">
+          <div class="item-name">Dana Burger</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Yumurtalı Dana Burger</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Double Dana Burger</div>
+          <div class="price">4,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Burger</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+      </section>
+
+
+      <section class="menu-section">
+
+        <h2 class="section-title">
+          Tostlar
+        </h2>
+
+        <div class="menu-item">
+          <div class="item-name">Türk Sucuklu Tost</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Türk Sucuklu Tost + Patates</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Jambonlu Tost</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Jambonlu Tost + Patates</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+      </section>
+
+
+      <section class="menu-section">
+
+        <h2 class="section-title">
+          Hot Dog
+        </h2>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Sosisli Hot Dog</div>
+          <div class="price">2,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Kebapçeli Hot Dog</div>
+          <div class="price">2,00 €</div>
+        </div>
+
+      </section>
+
+
+      <section class="menu-section">
+
+        <h2 class="section-title">
+          Izgara & Yan Ürünler
+        </h2>
+
+        <div class="menu-item">
+          <div class="item-name">Köfte / Kebapçe</div>
+          <div class="price">1,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Patates Kızartması</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Parçaları - 8 adet</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Tavuk Parçaları - 8 adet + Patates</div>
+          <div class="price">4,50 €</div>
+        </div>
+
+      </section>
+
+    </div>
+
+
     <!-- ENGLISH MENU -->
 
     <div id="en-menu" class="hidden">
-
 
       <section class="menu-section">
 
@@ -500,30 +655,22 @@
         </h2>
 
         <div class="menu-item">
-          <div class="item-name">
-            Toast with Turkish Sucuk
-          </div>
+          <div class="item-name">Toast with Turkish Sucuk</div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Toast with Turkish Sucuk and Fries
-          </div>
+          <div class="item-name">Toast with Turkish Sucuk and Fries</div>
           <div class="price">3,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Toast with Chicken Ham
-          </div>
+          <div class="item-name">Toast with Chicken Ham</div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Toast with Chicken Ham and Fries
-          </div>
+          <div class="item-name">Toast with Chicken Ham and Fries</div>
           <div class="price">3,50 €</div>
         </div>
 
@@ -537,16 +684,12 @@
         </h2>
 
         <div class="menu-item">
-          <div class="item-name">
-            Chicken Sausage Hot Dog
-          </div>
+          <div class="item-name">Chicken Sausage Hot Dog</div>
           <div class="price">2,00 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Kebapche Hot Dog
-          </div>
+          <div class="item-name">Kebapche Hot Dog</div>
           <div class="price">2,00 €</div>
         </div>
 
@@ -560,30 +703,22 @@
         </h2>
 
         <div class="menu-item">
-          <div class="item-name">
-            Kyufte / Kebapche
-          </div>
+          <div class="item-name">Kyufte / Kebapche</div>
           <div class="price">1,00 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            French Fries
-          </div>
+          <div class="item-name">French Fries</div>
           <div class="price">2,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Chicken Bites - 8 pcs
-          </div>
+          <div class="item-name">Chicken Bites - 8 pcs</div>
           <div class="price">3,50 €</div>
         </div>
 
         <div class="menu-item">
-          <div class="item-name">
-            Chicken Bites - 8 pcs with Fries
-          </div>
+          <div class="item-name">Chicken Bites - 8 pcs with Fries</div>
           <div class="price">4,50 €</div>
         </div>
 
@@ -595,9 +730,7 @@
     <footer class="footer">
 
       <strong>Mavi Foods Truck</strong>
-      <br />
 
-      📞 0894 975 048
       <br /><br />
 
       Instagram:
@@ -630,29 +763,30 @@
 
     function showLanguage(language, button) {
 
-      const bgMenu =
-        document.getElementById("bg-menu");
+      const bgMenu = document.getElementById("bg-menu");
+      const trMenu = document.getElementById("tr-menu");
+      const enMenu = document.getElementById("en-menu");
 
-      const enMenu =
-        document.getElementById("en-menu");
+      const buttons = document.querySelectorAll(".lang-btn");
 
-      const buttons =
-        document.querySelectorAll(".lang-btn");
+      buttons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
 
-      buttons.forEach((btn) =>
-        btn.classList.remove("active")
-      );
+      bgMenu.classList.add("hidden");
+      trMenu.classList.add("hidden");
+      enMenu.classList.add("hidden");
 
       if (language === "bg") {
-
         bgMenu.classList.remove("hidden");
-        enMenu.classList.add("hidden");
+      }
 
-      } else {
+      if (language === "tr") {
+        trMenu.classList.remove("hidden");
+      }
 
+      if (language === "en") {
         enMenu.classList.remove("hidden");
-        bgMenu.classList.add("hidden");
-
       }
 
       button.classList.add("active");
