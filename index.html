@@ -1,5 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mavi Döner & Burger</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d10;
+      color: #ffffff;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 14px 50px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #11161c, #171b20);
+      border: 1px solid #252b31;
+      border-radius: 24px;
+      padding: 26px 20px 22px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .logo-circle {
+      width: 105px;
+      height: 105px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      border: 4px solid #5aa8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #26323d;
+      box-shadow: 0 0 25px rgba(90, 168, 232, 0.18);
+    }
+
+    .logo-main {
+      font-size: 31px;
+      font-weight: 800;
+      color: #79bdf1;
+      line-height: 1;
+    }
+
+    .logo-small {
+      display: block;
+      font-size: 8px;
+      letter-spacing: 1.5px;
+      color: #d4d9dd;
+      margin-top: 6px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #f0a51a;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .language-switch {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0 6px;
+    }
+
+    .lang-btn {
+      border: 1px solid #39424a;
+      background: #151a1f;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .lang-btn.active {
+      background: #5aa8e8;
+      color: #06111b;
+      border-color: #5aa8e8;
+    }
+
+    .quick-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 18px 0 24px;
+    }
+
+    .action-btn {
+      text-decoration: none;
+      text-align: center;
+      padding: 13px 10px;
+      border-radius: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      border: 1px solid #313940;
+      background: #161b20;
+    }
+
+    .action-btn:hover {
+      background: #20272d;
+    }
+
+    .menu-section {
+      background: #111418;
+      border: 1px solid #272d33;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .section-title {
+      margin: 0;
+      padding: 16px 18px;
+      font-size: 22px;
+      color: #69b8f1;
+      border-bottom: 1px solid #272d33;
+      background: #15191e;
+    }
+
+    .menu-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 15px 18px;
+      border-bottom: 1px solid #22272c;
+      align-items: center;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .price {
+      color: #f3a61c;
+      font-weight: 800;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .footer {
+      margin-top: 26px;
+      padding: 22px 16px;
+      text-align: center;
+      border-top: 1px solid #30363d;
+      color: #b7bdc3;
+      line-height: 1.6;
+    }
+
+    .footer a {
+      color: #69b8f1;
+      text-decoration: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 520px) {
+      .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .hero {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .item-name {
+        font-size: 16px;
+      }
+
+      .quick-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <section class="hero">
+      <div class="logo-circle">
+        <div>
+          <div class="logo-main">Mavi</div>
+          <span class="logo-small">GREAT TASTE ON WHEELS</span>
+        </div>
+      </div>
+
+      <h1>Mavi Döner & Burger</h1>
+      <div class="subtitle">Fast Food • Food Truck</div>
+
+      <div class="language-switch">
+        <button class="lang-btn active" onclick="showLanguage('bg', this)">BG</button>
+        <button class="lang-btn" onclick="showLanguage('en', this)">EN</button>
+      </div>
+    </section>
+
+    <div class="quick-actions">
+      <a class="action-btn" href="tel:+359894975048">
+        📞 Call / Обади се
+      </a>
+
+      <a
+        class="action-btn"
+        href="https://www.instagram.com/truckmavifood?igsh=MTVzZzVwOWl2NnBudA=="
+        target="_blank"
+      >
+        📸 Instagram
+      </a>
+    </div>
+
+    <!-- BULGARIAN MENU -->
+    <div id="bg-menu">
+
+      <section class="menu-section">
+        <h2 class="section-title">Дюнер</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Голям</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Среден</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Малък</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Дюнер в питка</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Бокс дюнер</div>
+          <div class="price">4,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Бургери</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Телешки бургер</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Телешки бургер с яйце</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Двоен телешки бургер</div>
+          <div class="price">4,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Пилешки бургер</div>
+          <div class="price">3,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Тостове</h2>
+
+        <div class="menu-item">
+          <div class="item-name">С турски суджук</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">С турски суджук и картофи</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">С пилешка шунка</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">С пилешка шунка и картофи</div>
+          <div class="price">3,50 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Хот дог</h2>
+
+        <div class="menu-item">
+          <div class="item-name">С пилешки кренвирш</div>
+          <div class="price">2,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">С кебапче</div>
+          <div class="price">2,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Скара и др.</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Кюфте / Кебапче</div>
+          <div class="price">1,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Пържени картофи</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Пилешки хапки - 8 бр.</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Пилешки хапки - 8 бр. с картофи</div>
+          <div class="price">4,50 €</div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ENGLISH MENU -->
+    <div id="en-menu" class="hidden">
+
+      <section class="menu-section">
+        <h2 class="section-title">Döner</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Large Döner</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Medium Döner</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Small Döner</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Döner in Pita Bread</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Döner Box</div>
+          <div class="price">4,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Burgers</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Beef Burger</div>
+          <div class="price">3,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Beef Burger with Egg</div>
+          <div class="price">4,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Double Beef Burger</div>
+          <div class="price">4,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Chicken Burger</div>
+          <div class="price">3,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Toasts</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Toast with Turkish Sucuk</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Toast with Turkish Sucuk and Fries</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Toast with Chicken Ham</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Toast with Chicken Ham and Fries</div>
+          <div class="price">3,50 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Hot Dogs</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Chicken Sausage Hot Dog</div>
+          <div class="price">2,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Kebapche Hot Dog</div>
+          <div class="price">2,00 €</div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title">Grill & Sides</h2>
+
+        <div class="menu-item">
+          <div class="item-name">Kyufte / Kebapche</div>
+          <div class="price">1,00 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">French Fries</div>
+          <div class="price">2,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Chicken Bites - 8 pcs</div>
+          <div class="price">3,50 €</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-name">Chicken Bites - 8 pcs with Fries</div>
+          <div class="price">4,50 €</div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <strong>Mavi Foods Truck</strong><br />
+      📞 0894 975 048<br />
+
+      Instagram:
+      <a
+        href="https://www.instagram.com/truckmavifood?igsh=MTVzZzVwOWl2NnBudA=="
+        target="_blank"
+      >
+        @truckmavifood
+      </a>
+
+      <br /><br />
+
+      <a
+        href="https://www.facebook.com/search/top?q=Mavi%20Foods%20Truck"
+        target="_blank"
+      >
+        Facebook: Mavi Foods Truck
+      </a>
+    </footer>
+
+  </div>
+
+  <script>
+    function showLanguage(language, button) {
+      const bgMenu = document.getElementById("bg-menu");
+      const enMenu = document.getElementById("en-menu");
+      const buttons = document.querySelectorAll(".lang-btn");
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+
+      if (language === "bg") {
+        bgMenu.classList.remove("hidden");
+        enMenu.classList.add("hidden");
+      } else {
+        enMenu.classList.remove("hidden");
+        bgMenu.classList.add("hidden");
+      }
+
+      button.classList.add("active");
+    }
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
